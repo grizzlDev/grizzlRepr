@@ -1,5 +1,4 @@
-def my_func(name, surname, year, city, email, phone):
-    print(f"name, surname, year, city, email, phone")
-
-    
-my_func(name='aleksandr', surname='sha', year='1996', city='NiNo', email='email', phone='0877057')
+my_list = [9, 2, 1, 6, 7, 5, 4, 8]
+new_list = [el for num, el in enumerate(my_list) if my_list[num - 1] < my_list[num]]
+print(f'Исходный список {my_list}')
+print(f'Результат {new_list}')
